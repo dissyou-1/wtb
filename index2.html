@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的主页</title>
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <style>
+        .wrapper {
+    margin: auto;
+  }
+  .header {
+    justify-content: center;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(91, 95, 93);
+    border-radius: 10px 5px 10px 5px;
+  }
+  .header .more {
+    height: 45px;
+    width: 45px;
+    background-color: rgb(10, 197, 197);
+    border-radius: 10px 5px 10px 5px;
+
+    float: left;
+  }
+  .header .touxiang {
+    float: left;
+    height: 60px;
+    width: 80px;
+    line-height: 60px;
+    justify-content: center;
+    /* background-color: aqua; */
+    margin: auto;
+  }
+  .header .touxiang img {
+    height: 60px;
+    width: 60px;
+    line-height: 80px;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 1.5s;
+  }
+  .header .touxiang img:hover {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+  }
+  .header .phone {
+    height: 45px;
+    width: 45px;
+    float: left;
+    background-color: rgb(10, 197, 197);
+    border-radius: 10px 5px 10px 5px;
+
+  }
+  .maincontent {
+    margin-top: 20px;
+    height: 100%;
+    width: 1200px;
+    background-color: rgb(147, 148, 149);
+    border-radius: 10px 5px 10px 5px;
+  }
+  .maincontent .left {
+    float: left;
+    width: 200px;
+    height: 250px;
+    background-color: aqua;
+    border-radius: 10px 5px 10px 5px;
+  }
+  .maincontent .right {
+    margin-left: 5px;
+    float: left;
+    width: 995px;
+    height: 100%;
+    background-color: rgb(95, 240, 110);
+    border-radius: 10px 5px 10px 5px;
+  }
+  .footer {
+    float: left;
+    margin-top: 10px;
+    height: 180px;
+    width: 100%;
+    background-color: rgb(91, 95, 93);
+    border-radius: 10px 5px 10px 5px;
+  }
+      .goTop {
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            font-size: 20px;
+            text-align: center;
+            line-height: 25px;
+            color: #fff;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            display: none;
+            border-radius: 10px 5px 10px 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 返回顶部 -->
+    <div class="goTop">返回顶部</div>
+    <!-- 顶部导航栏 -->
+    <div class="header wrapper">
+      <div class="more">更多资料</div>
+      <div class="touxiang">
+        <img src="./images/QQ.png" />
+      </div>
+      <div class="phone">
+        <a href="https://space.bilibili.com/2110054700?spm_id_from=333.1007.0.0">联络管理</a>
+      </div>
+    </div>
+    <!-- 主要内容 -->
+    <div class="maincontent wrapper">
+      <div class="left">
+        <ul>
+            <li><a href="#bianliang">变量</a></li>
+            <li><a href="#duixiang">对象</a></li>
+            <li><a href="#liucheng">流程控制</a></li>
+            <li><a href="#hanshu">函数</a></li>
+            <li><a href="#zuoyongyu">作用域</a></li>
+            <li><a href="#shijian">事件</a></li>
+            <li><a href="#dom">dom </a></li>
+            <li><a href="#bom">bom</a></li>
+            <li><a href="#yuanxing">原型链</a></li>
+            <li><a href="#mysql">mysql索引</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <!-- 变量 -->
+        <div class="bianliang">
+            <a name = "bianliang"></a>
+            <h1>变量</h1>
+        <ul >
+            <li>变量命名</li>
+            <p>字母开头</p>
+            <p>大小写敏感</p>
+            <li>数据类型</li>
+            <p>实例</p>
+            <p>var lizi = "字符串";</p>
+            <p>var name = "张三";</p>
+            <p>var age = 18;</p>
+            <li>数组和对象</li>
+            <p>var arr = [];</p>
+            <p>var people = {
+                name:'李四',
+                sex:'男',
+                age:'50'
+                }</p>
+        </ul>
+        </div>
+        <!-- 对象 -->
+        <div class="duixiang">
+          <a name = "duixiang"></a>
+            <h1>对象</h1>
+            <ul>
+              <li>JavaScript 对象</li>
+              <p>var car = {name:"Fiat", model:500, color:"white"};</p>
+              <li>对象定义</li>
+              <p>var person = {
+                firstName:"John",
+                lastName:"Doe",
+                age:50,
+                eyeColor:"blue"
+               };</p>
+               <li>属性</li>
+               <p>键值对通常写法为 name : value (键与值以冒号分割)。</p>
+               <p>访问：person.lastName;</p>
+               <li>方法</li>
+               <p>对象定义函数name = person.fullName()/name = person.fullName</p>
+               <p>访问对象objectName.methodName()/objectName.methodName</p>
+               <li>遍历</li>
+               <p>
+                var cat = {<br>
+                  name: '汤姆',<br>
+                  age: 6,<br>
+                  skill: function(){<br>
+                      console.log('抓猫');<br>
+                  }<br>
+              }<br>
+              for (k in cat){<br>
+                  console.log(k); //<br>
+                  console.log(cat[k]);<br>
+              }<br>
+               </p>
+            </ul>
+        </div>
+        <!-- 流程控制 -->
+        <div class="liucheng">
+            <a name = "liucheng"></a>
+            <h1>流程控制</h1>
+            <ul>
+              <li>顺序结构</li>
+              <p>最基本的流程控制，按照代码先后顺序依次执行。</p>
+              <li>分支结构</li>
+              <p>1.if</p>
+              <p>//条件成立执行if里面代码,否则执行else里面的代码<br>
+                if (条件表达式) {<br>
+                // [如果]条件成立执行的代码<br>
+                } else {<br>
+                // [否则]执行的代码<br>
+                }<br>
+                </p>
+                <p>2.三元表达式</p>
+                <p>由三元运算符组成的句子。<br>
+                  结构为：条件表达式 ？表达式1 ：表达式2<br>
+                  若条件表达式为真则返回表达式1，反之则返回表达式2。<br></p>
+                <p>3.swich语句</p>
+                <p>switch(表达式) {<br>
+                  case value1:<br>
+                  //表达式等于valle1时要执行的代码<br>
+                  break;<br>
+                  case value2:<br>
+                  //表达式等于value2时要执行的代码<br>
+                  break;<br>
+                  default:<br>
+                  //表达式不等于任何-一个value时要执行的代码<br>
+                  }<br>
+                </p>
+                <p>4.for循环</p>
+                <p>for (初始化变量;条件表达式;操作表达式) {<br>
+                  //循环体<br>
+                  }<br>
+                </p>
+                <p>5.do  while循环</p>
+                <p>do {<br>
+                  //循环体代码-条件表达式为true时重复执行循环体代码<br>
+                  } while (条件表达式) ;<br>
+                  </p>
+            </ul>
+        </div>
+        <!-- 函数 -->
+        <div class="hanshu">
+          <a name = "hanshu"></a>
+            <h1>函数</h1>
+            <ul>
+              <li>定义</li>
+              <p>function myFunction(a, b) {return a * b;}</p>
+              <li>构造函数</li>
+              <p>function myFunction(a, b) {return a * b;}</p>
+              <p>var x = myFunction(4, 3) * 2;</p>
+              <li>箭头函数</li>
+              <p>var x = function(x, y) {return x * y; }</p>
+              <p>var x = myFunction(4, 3) * 2;</p>
+              <li>判断是否是瑞年</li>
+              <p>
+                function isRenian(year) {<br>
+                  var flag = '不是瑞年';<br>
+                  //能被4和100整除或者被400整除<br>
+                   if (year % 4 == 0 && year % 100 == 0 || year % 400 == 0 ) {<br>
+                      flag = '是瑞年';<br>
+                   } else {<br>
+                      flag<br>
+                   }<br>
+                   return flag;<br>
+              }<br>
+              // var q = isRenian(5000)<br>
+              console.log(isRenian(5000));<br>
+              console.log(isRenian(5800));<br>
+              </p>
+              <li>冒泡</li> 
+              <p>function sort(arr){<br>
+                //外循环<br>
+                for (i = 0; i < arr.length - 1; i++) {<br>
+                    //内循环<br>
+                    for (j = 0; j < arr.length - i - 1; j++){<br>
+                        var tamp= [];<br>
+                        if(arr[j] > arr[j+1]) {<br>
+                            var tamp = arr[j];<br>
+                            arr[j] = arr[j+1];<br>
+                            arr[j+1] = tamp;<br>
+                        }<br>
+                    }<br>
+                }<br>
+                return arr;<br>
+            }<br>
+            var arr1 =sort([1,3,354,878,34,6]);<br>
+            console.log(arr1);</p>
+            </ul>
+        </div>
+        <!-- 作用域 -->
+        <div class="zuoyongyu">
+          <a name = "zuoyongyu"></a>
+            <h1>作用域</h1>
+            <ul>
+              <li>局部作用域</li>
+              <p>// 此处不能调用 carName 变量
+                function myFunction() {
+                    var carName = "Volvo";
+                    // 函数内可调用 carName 变量
+                }</p>
+                <li>全局变量</li>
+                <p>var carName = " Volvo";
+                  // 此处可调用 carName 变量
+                  function myFunction() {
+                      // 函数内可调用 carName 变量
+                  }</p>
+                  <p>// 此处可调用 carName 变量
+ 
+                    function myFunction() {
+                        carName = "Volvo";
+                        // 此处可调用 carName 变量
+                    }</p>
+                <li>案例</li>
+                <p> // 全局变量<br>
+                  var num = 0;<br>
+                  console.log(num);<br>
+                  function getMax(局部变量) {<br>
+                      // 局部变量<br>
+                      var num = 10;<br>
+                      // 全局变量<br>
+                      num1 = 20;<br>
+                  }<br>
+                  console.log(num);<br>
+                  console.log(num1);</p>
+            </ul>
+        </div>
+        <!-- 事件 -->
+        <div class="shijian">
+          <a name = "shijian"></a>
+            <h1>事件</h1>
+            <ul>
+              <li>常见事件</li>
+              <p>onchange	HTML 元素改变</p>
+              <p>onclick	用户点击 HTML 元素</p>
+              <p>onload	浏览器已完成页面的加载</p>
+              <li>绑定</li>
+              <p>><br>
+                  var div = document.querySelector('div');<br>
+                  // 事件对象 记录事件触发的相关信息<br>
+                  div.onclick = function (e) {<br>
+                      alert('holle'); <br>
+                      console.log(e);<br>
+                  }<br>
+              </p>
+              <li>传递</li>
+              <p>var outer = document.querySelector('.outer');<br>
+                var center = document.querySelector('.center');<br>
+                var inner = document.querySelector('.inner');<br>
+                outer.onclick = function (){<br>
+                    console.log('outer');<br>
+                }<br>
+                center.onclick = function (){<br>
+                    console.log('center');<br>
+                }<br>
+                inner.onclick = function (e){<br>
+                    e.stopPropagation();<br>
+                    console.log('inner');<br>
+                }</p>
+            </ul>
+        </div>
+        <!-- DOM -->
+        <div class="dom">
+          <a name = "liucheng"></a>
+            <h1>DOM</h1>
+            <ul>
+              <li>JS获取DOM元素的5种方法</li>
+              <p>1.根据id名获取元素：getElementById;<br>
+                语法：document.getElementById(“id属性的值”);<br>
+                返回值：是一个元素对象，即当前id的对象（获取到元素则返回该元素，如果页面上没有你所获取的id，则返回null）<br>
+                2.根据标签名获取元素：getElementsByTagName，返回一个数组；<br>
+                语法：document.getElementsByTagName(“标签的名字”);<br>
+                返回值：是一个伪数组，所以页面上没有对应标签的时候返回空数组<br>
+                3.根据类名获取元素：getElementsByClassName，返回一个数组；<br>
+                语法：document.getElementsByClassName(“类样式的名字”);<br>
+                返回值：是一个伪数组，所以页面上没有对应标签的时候返回空数组<br>
+                语法：document.getElementsByName(“name属性的值”);<br>
+                返回值：是一个伪数组，所以页面上没有对应标签的时候返回空数组<br>
+                方法不推荐使用，因为在IE和欧朋浏览器中，通过这个方式会获取到相同的id的元素<br>
+                4.根据name属性值获取元素：getElementsByName，返回一个数组；<br>
+                5.根据选择器获取元素：<br>
+                (1)querySelector：获取一个元素，推荐使用 用法类似写css；<br>
+                语法：document.querySelector(“选择器”);<br>
+                返回文档中匹配指定的选择器组的第一个元素<br>
+                (2)querySelectorAll：返回一个元素数组。<br>
+                语法：document.querySelectorAll(“选择器”)；<br>
+                返回文档中匹配指定的选择器组的所有元素<br>
+              </p>
+              <li>改变 HTML 属性</li>
+              <p>document.getElementById("image").src="landscape.jpg";</p>
+            </ul>
+        </div>
+        <!-- BOM -->
+        <div class="bom">
+          <a name = "bom"></a>
+            <h1>BOM</h1>
+            <ul>
+              <li>操作属性</li>
+              <p>1.alert（提示框）</p>
+              <p>2.confirm（询问框）</p>
+              <p>3.prompt（输入框）</p>
+              <li>定时器</li>
+              <p>倒计时多少时间以后执行函数</p>
+              <p>语法：setTimeout(要执行的函数，多少时间以后执行);</p>
+              <p>会在你设定的时间以后执行函数</p>
+              <p>var timerId = setTimeout(function (){
+                console.log('我执行了');
+              },1000);</p>
+              <p>1时间是按照毫秒进行计算的，1000 毫秒就是 1秒钟
+                2所以会在页面打开 1 秒钟以后执行函数
+                3只执行一次，就不在执行了
+                4返回值是，当前这个定时器是页面中的第几个定时器</p>
+                <li>视口与滚动的关系</li>
+                <p>1.scrollX：文档向右滚动的距离，当窗口无法展示整个页面，这时候就需要滚动查看。
+                  scrollY：文档向下滚动的距离，当窗口无法展示整个页面，这时候就需要滚动查看</p>
+                <p>2.console.log("scrollX 向右滚动了多少距离：",window.scrollX);
+                  console.log("scrollY 向下滚动了多少距离：",window.scrollY);
+                </p>
+            </ul>
+        </div>
+        <!-- 原型链 -->
+        <div class="yuanxing">
+          <a name = "yuanxing"></a>
+            <h1>原型链</h1>
+            <ul>
+              <li>原型</li>
+              <p>1、所有的引用类型（数组、函数、对象）可以自由扩展属性（除null以外）。</p>
+              <p>2、所有的引用类型都有一个’_ _ proto_ _'属性(也叫隐式原型，它是一个普通的对象)。</p>
+              <p>3、所有的函数都有一个’prototype’属性(这也叫显式原型，它也是一个普通的对象)。</p>
+              <p>4、所有引用类型，它的’_ _ proto_ _'属性指向它的构造函数的’prototype’属性。</p>
+              <p>5、当试图得到一个对象的属性时，如果这个对象本身不存在这个属性，
+                那么就会去它的’_ _ proto_ _'属性(也就是它的构造函数的’prototype’属性)中去寻找。
+              </p>
+              <p>//这是一个构造函数 <br>
+                function Foo(name,age){<br>
+                  this.name=name;<br>
+                  this.age=age;<br>
+                }<br>
+                /*根据要点3，所有的函数都有一个prototype属性，这个属性是一个对象<br>
+                再根据要点1，所有的对象可以自由扩展属性<br>
+                于是就有了以下写法*/<br>
+                Foo.prototype={<br>
+                  // prototype对象里面又有其他的属性<br>
+                  showName:function(){<br>
+                    console.log("I'm "+this.name);//this是什么要看执行的时候谁调用了这个函数<br>
+                  },<br>
+                  showAge:function(){<br>
+                    console.log("And I'm "+this.age);//this是什么要看执行的时候谁调用了这个函数<br>
+                  }<br>
+                }<br>
+                var fn=new Foo('小明',19)<br>
+                /*当试图得到一个对象的属性时，如果这个对象本身不存在这个属性，那么就会去它<br>
+                构造函数的'prototype'属性中去找*/<br>
+                fn.showName(); //I'm 小明<br>
+                fn.showAge(); //And I'm 19</p>
+                <li>原型链</li>
+                <p>当试图得到一个对象的属性时，如果这个对象本身不存在这个属性，那么就会去它构造函数的’prototype’属性中去寻找。
+                  那又因为’prototype’属性是一个对象，所以它也有一个’_ _ proto_ _'属性。
+                </p>
+                <p>// 构造函数<br>
+                  function Foo(name,age){<br>
+                     this.name=name;<br>
+                     this.age=age;<br>
+                  }<br>
+                  Object.prototype.toString=function(){<br>
+                    //this是什么要看执行的时候谁调用了这个函数。<br>
+                    console.log("I'm "+this.name+" And I'm "+this.age);<br>
+                  }<br>
+                  var fn=new Foo('小明',19);<br>
+                  fn.toString(); //I'm 小明 And I'm 19<br>
+                  console.log(fn.toString===Foo.prototype.__proto__.toString); //true<br>
+                  
+                  console.log(fn.__proto__ ===Foo.prototype)//true<br>
+                  console.log(Foo.prototype.__proto__===Object.prototype)//true<br>
+                  console.log(Object.prototype.__proto__===null)//true<br>
+                </p>
+                <p>首先，fn的构造函数是Foo()。所以：<br>
+                  fn._ _ proto _ _=== Foo.prototype<br>
+                  又因为Foo.prototype是一个普通的对象，它的构造函数是Object，所以：<br>
+                  Foo.prototype._ _ proto _ _=== Object.prototype<br>
+                  通过上面的代码，我们知道这个toString()方法是在Object.prototype里面的，当调用这个对象的本身并不存在的方法时，它会一层一层地往上去找，一直到null为止。<br>
+                  所以当fn调用toString()时，JS发现fn中没有这个方法，于是它就去Foo.prototype中去找，发现还是没有这个方法，然后就去Object.prototype中去找，找到了，就调用Object.prototype中的toString()方法。<br>
+            </ul>
+        </div>
+        <!-- 数据库索引 -->
+        <div class="mysql">
+          <a name = "mysql"></a>
+            <h1>数据库索引</h1>
+            <ul>
+              <li>索引介绍</li>
+              <p>官方介绍索引是帮助MySQL高效获取数据的数据结构。更通俗的说，数据库索引好比是一本书前面的目录，能加快数据库的查询速度。<br>
+                一般来说索引本身也很大，不可能全部存储在内存中，
+                因此索引往往是存储在磁盘上的文件中的（可能存储在单独的索引文件中，也可能和数据一起存储在数据文件中）。<br>
+                我们通常所说的索引，包括聚集索引、覆盖索引、组合索引、前缀索引、唯一索引等，没有特别说明，默认都是使用B+树结构组织（多路搜索树，并不一定是二叉的）的索引。<br>
+              </p>
+              <li>索引类型</li>
+              <p>主键索引
+                索引列中的值必须是唯一的，不允许有空值。<br>
+                普通索引<br>
+                MySQL中基本索引类型，没有什么限制，允许在定义索引的列中插入重复值和空值。<br>
+                唯一索引<br>
+                索引列中的值必须是唯一的，但是允许为空值。<br>
+                全文索引<br>
+                只能在文本类型CHAR,VARCHAR,TEXT类型字段上创建全文索引。字段长度比较大时，如果创建普通索引，在进行like模糊查询时效率比较低，这时可以创建全文索引。 MyISAM和InnoDB中都可以使用全文索引。<br>
+                空间索引<br>
+                MySQL在5.7之后的版本支持了空间索引，而且支持OpenGIS几何数据模型。MySQL在空间索引这方面遵循OpenGIS几何数据模型规则。<br>
+                前缀索引<br>
+                在文本类型如CHAR,VARCHAR,TEXT类列上创建索引时，可以指定索引列的长度，但是数值类型不能指定。<br>
+              </p>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 底部导航栏 -->
+    <div class="footer wrapper">
+    </div>
+    <!-- 返回顶部 -->
+    <script>
+      var goTop = document.querySelector('.goTop')
+      console.log(goTop);
+
+      window.onscroll = function () {
+          var hight = document.documentElement.scrollTop
+          if (hight >= 80) {
+              goTop.style.display = 'block';
+          } else {
+              goTop.style.display = 'none';
+          }
+      }
+      goTop.onclick = function () {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          })
+      }
+  </script>
+  </body>
+</html>
